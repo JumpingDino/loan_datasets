@@ -1,0 +1,51 @@
+{
+  "@context": "https://mlcommons.org/croissant/1.0/context.json",
+  "@type": "sc:Dataset",
+
+  "name": "German Credit Dataset (Human-Readable)",
+  "description": "Human-readable version of the German Credit dataset with descriptive categorical values and a binary target (good/bad).",
+  "version": "1.0",
+
+  "distribution": [
+    {
+      "@type": "sc:FileObject",
+      "name": "german_credit_human_csv",
+      "encodingFormat": "text/csv",
+      "contentUrl": "../data/german_credit_human.csv"
+    }
+  ],
+
+  "recordSet": {
+    "@type": "cr:RecordSet",
+    "field": [
+      { "@type": "cr:Field", "name": "status_account", "dataType": "string" },
+      { "@type": "cr:Field", "name": "month_duration", "dataType": "integer" },
+      { "@type": "cr:Field", "name": "credit_history", "dataType": "string" },
+      { "@type": "cr:Field", "name": "purpose", "dataType": "string" },
+      { "@type": "cr:Field", "name": "credit_amount", "dataType": "number" },
+      { "@type": "cr:Field", "name": "status_savings", "dataType": "string" },
+      { "@type": "cr:Field", "name": "years_employment", "dataType": "string" },
+      { "@type": "cr:Field", "name": "payment_to_income_ratio", "dataType": "integer" },
+      { "@type": "cr:Field", "name": "status_and_sex", "dataType": "string" },
+      { "@type": "cr:Field", "name": "secondary_obligor", "dataType": "string" },
+      { "@type": "cr:Field", "name": "residence_since", "dataType": "integer" },
+      { "@type": "cr:Field", "name": "collateral", "dataType": "string" },
+      { "@type": "cr:Field", "name": "age", "dataType": "integer" },
+      { "@type": "cr:Field", "name": "other_installment_plans", "dataType": "string" },
+      { "@type": "cr:Field", "name": "housing", "dataType": "string" },
+      { "@type": "cr:Field", "name": "n_credits", "dataType": "integer" },
+      { "@type": "cr:Field", "name": "job", "dataType": "string" },
+      { "@type": "cr:Field", "name": "n_guarantors", "dataType": "integer" },
+      { "@type": "cr:Field", "name": "telephone", "dataType": "string" },
+      { "@type": "cr:Field", "name": "is_foreign_worker", "dataType": "string" },
+
+      { "@type": "cr:Field", "name": "target", "dataType": "string", "isTarget": true }
+    ]
+  },
+
+  "mlTask": {
+    "@type": "cr:BinaryClassification",
+    "targetField": "target",
+    "positiveClass": "bad"
+  }
+}
