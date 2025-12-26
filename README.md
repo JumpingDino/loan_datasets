@@ -20,7 +20,6 @@ Any preprocessing scripts used to improve data readability or for train/test ass
 ### German Credit Data
 - **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data)
 - **Description**: A widely-used dataset containing attributes and credit risk classifications for 1000 loan applicants. Includes demographic information, credit history, loan details, and other financial characteristics.
-- **Link**: https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data
 
 ##### Fields
 | column_name             | type        | description                                                                                                                                                     |
@@ -50,7 +49,6 @@ Any preprocessing scripts used to improve data readability or for train/test ass
 ### Taiwan Credit Risk Dataset
 - **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
 - **Description**: Contains information on default payments, demographic factors, credit data, payment history, and bill statements of credit card clients in Taiwan from April 2005 to September 2005.
-- **Link**: https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
 
 ##### Fields
 | column_name | type        | description                                                                                                                             |
